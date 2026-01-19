@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Libro para Laura</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.book {
+  width: 90%;
+  max-width: 700px;
+  height: 90%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+/* PÁGINAS */
+.page {
+  position: absolute;
+  inset: 0;
+  padding: 40px;
+  display: none;
+  overflow-y: auto;
+}
+
+.page.active {
+  display: block;
+}
+
+/* TEXTO */
+.portada {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 22px;
+}
+
+.texto {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* FONDOS ESTABLES */
+.huella {
+  background: repeating-linear-gradient(
+    45deg,
+    #2a2a2a,
+    #2a2a2a 25px,
+    #333 25px,
+    #333 50px
+  );
+}
+
+.volley {
+  background:
+    radial-gradient(circle at 20% 30%, #444 8%, transparent 9%),
+    radial-gradient(circle at 80% 60%, #444 8%, transparent 9%),
+    radial-gradient(circle at 50% 80%, #444 8%, transparent 9%),
+    #1b1b1b;
+}
+
+.noche {
+  background:
+    radial-gradient(circle, #ffffff22 1px, transparent 1px),
+    radial-gradient(circle, #ffffff22 1px, transparent 1px),
+    linear-gradient(#0b1d3a, #000);
+  background-size: 60px 60px, 100px 100px, cover;
+}
+
+/* CONTROLES */
+.controls {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+button {
+  background: rgba(0,0,0,0.6);
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* MÚSICA */
+.music {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="book">
+
+<!-- BOTÓN CANCIÓN -->
+<a class="music" href="https://www.youtube.com/watch?v=K5Yz0YxKZyY" target="_blank">
+<button>🎵 Toca aquí y lee con “El aprendiz”</button>
+</a>
+
+<!-- PORTADA -->
+<div class="page active portada huella">
+<p>
+PARA: LAURA NAVAS<br>
+(MY FAVORITE PLAYER)<br><br>
+DE: Su amigo alias:<br>
+vaca solitaria 😔
+</p>
+</div>
+
+<!-- PÁGINA 1 -->
+<div class="page texto noche">
+Hola, soy yoo, sabes nunca pensé que haría algo como esto pero me alegra que haya sido para ti. ¿Quién diría, no? Te conocí cuando tenías prácticamente 13 años, la chica más blanca del salón, la más callada y la que siempre ocupa el puesto número 1 en el colegio, jaja. Definitivamente fue gracias al voleibol que logramos ser más amigos, porque por el salón no hubiese sido tan así.
+</div>
+
+<!-- PÁGINA 2 -->
+<div class="page texto huella">
+Sabes, no hubiese imaginado que hubiese sido posible todo lo que he pasado en estos años y seguramente fuera algo loco si no tuviera con quién hablar de esto. Me has ayudado demasiado, siento que a veces no encuentro formas de cómo agradecértelo y que a veces un simple gracias no es suficiente.
+</div>
+
+<!-- PÁGINA 3 -->
+<div class="page texto volley">
+Me siento con suerte de haberte conocido, definitivamente ha sido una de las mejores cosas que me han pasado en la vida. Me has enseñado demasiadas cosas y tienes muchas cualidades de las cuales siempre te hacen notar tan única.
+</div>
+
+<!-- PÁGINA 4 -->
+<div class="page texto volley">
+No hay ninguna otra persona en la que yo más confíe que en ti. Y como tú has estado para mí, yo siempre estaré para ti, no importa si es de madrugada o si es a medianoche, no importa si estoy en Saravena o si estoy en Cúcuta, siempre que yo pueda o necesites de mí, no dudes en decírmelo.
+</div>
+
+<!-- PÁGINA 5 -->
+<div class="page texto noche">
+Hay algo que siempre he dicho y es que tú eres muy capaz de cualquier cosa. Sin importar las cosas que hayas tenido que pasar, sé que has pensado todo de la manera más madura y, aunque a veces llegas a salirte de control y no sepas cómo manejarlo de la manera adecuada, no te alteras para que todos lo noten.
+</div>
+
+<!-- PÁGINA 6 -->
+<div class="page texto volley">
+Sé que tú últimamente no te has sentido muy bien en el fondo, pero has sido la persona más fuerte que he visto, sin importar las probabilidades que te hayan mencionado. Yo sé que tú lograrás cualquier cosa, ¿y por qué lo sé? Porque se trata de Laura Navas.
+</div>
+
+<!-- PÁGINA 7 -->
+<div class="page texto huella">
+Y aunque lleguen los días grises y tú sientas que no eres suficiente para salir de algo, me tienes a mí y tienes a tus otros amigos y a tus familiares que te aprecian, porque tú te haces querer y apreciar.
+</div>
+
+<!-- PÁGINA 8 -->
+<div class="page texto noche">
+Sé que eres alguien muy valiente, muy capaz, honesta, versátil, graciosa, ahora sí te puedes considerar alguien sociable. Cariñosa a tu modo, detallista, amable, cautivadora, solidaria, responsable, optimista, humilde e íntegra.
+</div>
+
+<!-- PÁGINA 9 -->
+<div class="page texto huella">
+Y sé que tienes muchas más cualidades que te hacen especial, solo que a veces no está mal recordar lo que eres y lo que tienes.
+</div>
+
+<!-- PÁGINA 10 -->
+<div class="page texto noche">
+Yo solo quiero que estos XV sean especiales, porque solo una vez se cumplen quince años. Me alegro de que hayas querido celebrarlos y que haya sido algo más pequeño, pero no importa, estás con las personas importantes para ti.
+</div>
+
+<!-- PÁGINA 11 -->
+<div class="page texto volley">
+Te quiero demasiado, Laura. Eres una de las personas más importantes para mí. Cualquier cosa que pueda hacer por ti, solo dímelo y te ayudaré.
+</div>
+
+<!-- CONTROLES -->
+<div class="controls">
+<button onclick="prev()">Anterior</button>
+<button onclick="next()">Siguiente</button>
+</div>
+
+</div>
+
+<script>
+let pages = document.querySelectorAll('.page');
+let index = 0;
+
+function show(i) {
+  pages.forEach(p => p.classList.remove('active'));
+  pages[i].classList.add('active');
+}
+
+function next() {
+  if (index < pages.length - 1) {
+    index++;
+    show(index);
+  }
+}
+
+function prev() {
+  if (index > 0) {
+    index--;
+    show(index);
+  }
+}
+</script>
+
+</body>
+</html>
