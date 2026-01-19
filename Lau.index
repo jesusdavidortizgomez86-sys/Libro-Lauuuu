@@ -1,0 +1,93 @@
+<style>
+body {
+  margin: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.book {
+  width: 90%;
+  max-width: 700px;
+  height: 90%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.page {
+  position: absolute;
+  inset: 0;
+  padding: 40px;
+  display: none;
+  overflow-y: auto;
+}
+
+.page.active {
+  display: block;
+}
+
+.portada {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 22px;
+}
+
+.texto {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* FONDOS ESTABLES */
+.huella {
+  background: repeating-linear-gradient(
+    45deg,
+    #2b2b2b,
+    #2b2b2b 20px,
+    #333 20px,
+    #333 40px
+  );
+}
+
+.volley {
+  background: radial-gradient(circle at top left, #444 10%, transparent 11%),
+              radial-gradient(circle at bottom right, #444 10%, transparent 11%),
+              #1e1e1e;
+}
+
+.noche {
+  background: radial-gradient(circle, #ffffff22 1px, transparent 1px),
+              radial-gradient(circle, #ffffff22 1px, transparent 1px),
+              linear-gradient(#0b1d3a, #000);
+  background-size: 60px 60px, 100px 100px, cover;
+}
+
+.controls {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+button {
+  background: rgba(0,0,0,0.6);
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.music {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+</style>
